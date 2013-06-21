@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <title>网页右侧可关闭的漂浮窗口 站长学院www.cqshy.cn</title>
+    <meta http-equiv="content-type" content="text/html;charset=gb2312">
+    </head>
+    
+    
+    
+    
+    <body>
+        <div id="ShowAD" style="position:absolute;z-index:100; background-color:#E96253; color:#FFFFFF; width:640px; height:144px;">
+            <p style="float:left;"><a href="index.html">到 App Store 下载蠹鱼阅读器。</a></p>
+            <div style=" cursor:pointer;width:135;height:144px;font-size:14px;font-weight:bold;text-align:left;cursor:hand; background-image:url(image/CloseRemind.png); background-size:23px 23px; background-repeat:no-repeat; background-position:300px 30px;" onClick="closead();">
+            </div>
+        </div>
+        <script language="javascript">
+        var bodyfrm = ( document.compatMode.toLowerCase()=="css1compat" ) ? document.documentElement : document.body;
+        var adst = document.getElementById("ShowAD").style;
+        adst.top = ( bodyfrm.clientHeight -530-22 ) + "px";
+        adst.left = ( bodyfrm.clientWidth -155 ) + "px";
+        function moveR() {
+        adst.top = ( bodyfrm.scrollTop + bodyfrm.clientHeight - 530-22) + "px";
+        adst.left = ( bodyfrm.scrollLeft + bodyfrm.clientWidth - 640 ) + "px";
+        }
+        setInterval("moveR();", 80);
+        function closead()
+        {
+        adst.display='none';
+        }
+        </script>
+        <div id="Content" style="height:900px; "></div>
+    </body>
+    </html>

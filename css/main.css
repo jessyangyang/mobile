@@ -1,0 +1,348 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	padding:0px;
+	margin:0px;
+	font-family:Helvitica nune,sans-serif;
+	font-weight:normal;
+	}
+	ul, li{
+		list-style:none;}
+	
+	
+	
+  a{
+	  text-decoration:none;
+	  }
+	/*---------------------------*/
+/*--------- Top Statebar ---------*/
+#Statebar{
+	height:44px;
+	width:100%;
+	background-color:#B74535;
+	background-repeat:initial initial;
+	border-bottom:1px solid #93362A;
+	color:#FFFFFF;
+	display:inline-block;
+	font-size:14px;
+	font-weight:700;
+	text-shadow:rgba(0, 0, 0, 0.398438) 0 1px 1px;
+	position:fixed;
+	top:0;
+	text-align:center;
+	}
+	
+		.PageTitle{
+			color:#FFF;
+			text-shadow:0px 1px 0 rgba(0, 0, 0, .2567);
+			font-size:20px;
+			position:fixed;
+			top:10px;
+			width:100%;
+			text-align:center;
+			font-weight:800;
+			
+			}
+	
+	/*---------------------------*/
+/*--------- Statebar icon ---------*/	
+	
+	.Setting, .Back, .HomePage{		
+		position:absolute;
+		background-repeat:no-repeat no-repeat;
+		text-indent:-9999px;
+		top:13px;
+		width:19px;
+		}
+	
+	.Setting{
+		height:19px;
+		background-image:url(../image/setting.png);
+		background-size:19px 19px;
+		right:13px;
+		}
+	
+	.Back{
+		background-image:url(../image/back.png);
+		background-size:19px 20px;
+		left:13px;
+		height:20px;
+		}
+	
+	.HomePage{
+		background-image:url(../image/IndexIcon.png);
+		background-size:16px 19px;
+		left:13px;
+		height:19px;
+		}
+	
+	/*---------------------------*/
+/*--------- Navgation ---------*/
+.NavBar{
+	background-color:#F6F5F0; 
+	height:46px; 
+	border-bottom:1px solid #DCD9D7;	
+	-webkit-box-shadow:rgba(0, 0, 0, 0.096875) 0 1px 2px, rgba(255, 255, 255, 0.246094) 0 1px inset;
+	-moz-box-shadow:rgba(0, 0, 0, 0.096875) 0 1px 2px, rgba(255, 255, 255, 0.046094) 0 1px inset;
+	box-shadow:rgba(0, 0, 0, 0.096875) 0 1px 2px, rgba(255, 255, 255, 0.246094) 0 1px inset;
+	position:fixed;
+	top:44px;
+	width:100%;
+	text-align:center;
+	}
+	
+	.NavBar ul{
+		list-style:none; 
+		text-align:center; 
+		font-size:14px;
+		display:inline-block;
+		}
+	
+	.NavBar li, .NavBar li a {
+		color:#6E6868;
+		overflow:hidden;
+		}
+		
+	.NavBar li{
+		border-right:1px solid #DCD9D7; 
+		float:left;
+		padding:14px 0px 15px 0px;
+		text-align:center;
+		}		
+	.NavBar li a {
+		height:44px;
+		padding:31px 39px 14px 39px;
+	}		
+		
+	li a.ActivePage, li a:active{
+		color:#B74535;
+		background:#EEECE4;
+	}
+
+	.NavBar li.free{
+		border-right:none;
+		}
+	
+	
+	/*---------------------------*/
+/*--------- Book Information ---------*/
+	
+	
+	p{
+		color:#666666;
+		line-height:1.59em;
+		font-weight:lighter;
+		text-justify:inter-ideograph;
+		font-size:14px;
+		}
+	P.Completeness{
+		font-size:10px;
+		color:#666666;
+		margin-top:40px;
+		}	
+	
+	p.PublishedTime{
+		font-size:9px;
+		color:#666666;
+		}
+	p.Author{
+		font-size:14px;
+		}
+	.Price{
+		color:#E15F4F;
+		font-size:14px;
+		line-height:1.2em;
+		margin:6px 0 8px 0;
+		}
+	
+	.BookCoverBox{
+		height:117px;
+		width:81px;
+		float:left;
+		display:block;
+		margin-right:10px;
+		}
+		
+		
+		
+	.BookContentBox{
+		padding:14px 14px 15px 14px; 
+		border-bottom:1px solid #DCD9D7; 
+		clear:both;
+		}
+		
+	.BookInforContent{
+		float:right;
+		width:200px;
+		}	
+		
+		
+		h2{
+			font-size:20px;
+			color:#333333;
+			margin-bottom:5px;
+			}
+		
+
+	/*---------------------------*/
+/*--------- ClearFloat ---------*/
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+/* End hide from IE-mac */
+
+		
+		
+	/*---------------------------*/
+/*--------- Copyright Footer ---------*/
+		
+.CopyrightFooter{
+	padding:10px 0 10px 0;
+	text-align:center; 
+	background-color:#F0EDED; 
+	font-size:9px; 
+	color:#797979; 
+	text-shadow:0 1px 0 #fafafa; 
+	font-family:Arial, Helvetica, sans-serif;
+	}		
+		
+	/*---------------------------*/
+
+h3{
+	font-size:16px;
+	color:#333333;
+	text-shadow:0 1px 1px #ffffff;
+	line-height:1em;
+	margin-bottom:15px;
+	}
+
+
+	/*---------------------------*/
+/*--------- AppLink style ---------*/
+	
+.AppLink{
+	background-color:#E96253;
+	width:100%;
+	height:12px;
+	-webkit-box-shadow:rgba(0, 0, 0, 0.146094) 0 -1px 2px;
+	-moz-box-shadow:rgba(0, 0, 0, 0.146094) 0 -1px 2px;
+	box-shadow:rgba(0,0, 0, 0.146094) 0 -1px 2px;
+	background-image:url(../image/AppIcon.png);
+	background-size:38px 38px;
+	background-position:18px 18px;
+	background-repeat:no-repeat;
+	padding:26px 0 34px 65px;
+	position:fixed;
+	bottom:0px;
+	}
+	
+.AppLink a{ 
+	position:relative;
+	color:#FFFFFF;
+	text-decoration:none;
+	font-family:Helvitica nune,sans-serif;
+	font-size:15px;
+}
+	
+.close{
+	background-image:url(../image/CloseRemind.png);
+	background-size:23px 23px; 
+	background-repeat:no-repeat;
+	height:23px;
+	width:23px;
+	text-indent:-9999px;
+	cursor:pointer;
+	position:absolute;
+	z-index:999;
+	top:25px;
+	right: 5%;
+}
+
+
+	/*---------------------------*/
+/*--------- Load More ---------*/
+
+.LoadMore{
+	height:20px;
+	background-color:#F4F4F4;
+	border-bottom:1px solid #DCD9D7;
+	padding:10px 0 30px 150px;
+	}
+	
+.loading
+	{
+	width:10px;
+	height:10px;
+	background:#CAC8C8;
+	position:relative;
+	animation:myfirst infinite ease-in-out 1.1s;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	-moz-animation:myfirst infinite ease-out 1s; /* Firefox */
+	-webkit-animation:myfirst infinite ease-out 1s; /* Safari and Chrome */
+	-o-animation:myfirst infinite ease-out 1s; /* Opera */
+}
+
+@keyframes myfirst
+{
+0%   {background-color: rgba(202,200,200); top:0px;}
+38%  {background-color: rgba(202,200,200); top:25px;border-bottom-left-radius:10px;border-bottom-right-radius:10px; height:10px;}
+39%  {background-color: rgba(202,200,200); top:26px;border-bottom-left-radius:9px;border-bottom-right-radius:9px; height:9px;}
+41%  {background-color: rgba(202,200,200); top:28px;border-bottom-left-radius:7px;border-bottom-right-radius:7px; height:7px;}
+42%  {background-color: rgba(202,200,200); top:28px;border-bottom-left-radius:7px;border-bottom-right-radius:7px; height:7px;}
+43%  {background-color: rgba(202,200,200); top:28px;border-bottom-left-radius:7px;border-bottom-right-radius:7px; height:7px;}
+45%  {background-color: rgba(202,200,200); top:26px;border-bottom-left-radius:9px;border-bottom-right-radius:9px; height:9px;}
+46%  {background-color: rgba(202,200,200); top:25px;border-bottom-left-radius:10px;border-bottom-right-radius:10px; height:10px; animation-timing-function:ease-in;}
+100% {background-color: rgba(202,200,200); top:0px;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {background-color: rgba(202,200,200); top:0px;}
+38%  {background-color: rgba(202,200,200); top:25px;border-bottom-left-radius:10px;border-bottom-right-radius:10px; height:10px;}
+39%  {background-color: rgba(202,200,200); top:26px;border-bottom-left-radius:9px;border-bottom-right-radius:9px; height:9px;}
+41%  {background-color: rgba(202,200,200); top:28px;border-bottom-left-radius:7px;border-bottom-right-radius:7px; height:7px;}
+42%  {background-color: rgba(202,200,200); top:28px;border-bottom-left-radius:7px;border-bottom-right-radius:7px; height:7px;}
+43%  {background-color: rgba(202,200,200); top:28px;border-bottom-left-radius:7px;border-bottom-right-radius:7px; height:7px;}
+45%  {background-color: rgba(202,200,200); top:26px;border-bottom-left-radius:9px;border-bottom-right-radius:9px; height:9px;}
+46%  {background-color: rgba(202,200,200); top:25px;border-bottom-left-radius:10px;border-bottom-right-radius:10px; height:10px; animation-timing-function:ease-in;}
+100% {background-color: rgba(202,200,200); top:0px;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   {background-color: rgba(202,200,200); top:0px;}
+38%  {background-color: rgba(202,200,200); top:25px;border-bottom-left-radius:10px;border-bottom-right-radius:10px; height:10px;}
+39%  {background-color: rgba(202,200,200); top:26px;border-bottom-left-radius:9px;border-bottom-right-radius:9px; height:9px;}
+41%  {background-color: rgba(202,200,200); top:28px;border-bottom-left-radius:7px;border-bottom-right-radius:7px; height:7px;}
+42%  {background-color: rgba(202,200,200); top:28px;border-bottom-left-radius:7px;border-bottom-right-radius:7px; height:7px;}
+43%  {background-color: rgba(202,200,200); top:28px;border-bottom-left-radius:7px;border-bottom-right-radius:7px; height:7px;}
+45%  {background-color: rgba(202,200,200); top:26px;border-bottom-left-radius:9px;border-bottom-right-radius:9px; height:9px;}
+46%  {background-color: rgba(202,200,200); top:25px;border-bottom-left-radius:10px;border-bottom-right-radius:10px; height:10px; animation-timing-function:ease-in;}
+100% {background-color: rgba(202,200,200); top:0px;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0%   {background-color: rgba(202,200,200); top:0px;}
+38%  {background-color: rgba(202,200,200); top:25px;border-bottom-left-radius:10px;border-bottom-right-radius:10px; height:10px;}
+39%  {background-color: rgba(202,200,200); top:26px;border-bottom-left-radius:9px;border-bottom-right-radius:9px; height:9px;}
+41%  {background-color: rgba(202,200,200); top:28px;border-bottom-left-radius:7px;border-bottom-right-radius:7px; height:7px;}
+42%  {background-color: rgba(202,200,200); top:28px;border-bottom-left-radius:7px;border-bottom-right-radius:7px; height:7px;}
+43%  {background-color: rgba(202,200,200); top:28px;border-bottom-left-radius:7px;border-bottom-right-radius:7px; height:7px;}
+45%  {background-color: rgba(202,200,200); top:26px;border-bottom-left-radius:9px;border-bottom-right-radius:9px; height:9px;}
+46%  {background-color: rgba(202,200,200); top:25px;border-bottom-left-radius:10px;border-bottom-right-radius:10px; height:10px; animation-timing-function:ease-in;}
+100% {background-color: rgba(202,200,200); top:0px;}
+}
+	
+	
